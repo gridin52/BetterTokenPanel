@@ -1,0 +1,13 @@
+.DS_Store
+.AppleDouble
+._*
+.build/
+.swiftpm/
+dist/
+node_modules/
+BetterTokenPanel-source.zip
+*.xcuserstate
+xcuserdata/
+.env
+.env.*
+!.env.example

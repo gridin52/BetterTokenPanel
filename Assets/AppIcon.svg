@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#244C85"/><stop offset="0.52" stop-color="#172E58"/><stop offset="1" stop-color="#101C39"/>
+    </linearGradient>
+    <linearGradient id="coin" x1="0" y1="0" x2="0.9" y2="1">
+      <stop stop-color="#ECFCFF"/><stop offset="0.4" stop-color="#A6DFFF"/><stop offset="1" stop-color="#5693F3"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#84BBFF"/><stop offset="1" stop-color="#2855B4"/>
+    </linearGradient>
+    <linearGradient id="gauge" x1="0" y1="0" x2="0.9" y2="1">
+      <stop stop-color="#DAFFF2"/><stop offset="0.5" stop-color="#79F2C6"/><stop offset="1" stop-color="#36B5A5"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity="0.28"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.02"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+  <!-- A quiet navy macOS tile; the luminous token is the only focal element. -->
+  <rect x="72" y="89" width="880" height="880" rx="204" fill="#071228" opacity="0.18"/>
+  <rect x="72" y="68" width="880" height="880" rx="204" fill="url(#base)"/>
+  <rect x="76" y="72" width="872" height="872" rx="200" fill="none" stroke="url(#sheen)" stroke-width="5"/>
+  <!-- Offset rim gives the token its weight. -->
+  <circle cx="512" cy="536" r="279" fill="#091A36" opacity="0.4"/>
+  <circle cx="512" cy="525" r="266" fill="url(#edge)"/>
+  <circle cx="512" cy="503" r="266" fill="url(#coin)"/>
+  <circle cx="512" cy="503" r="247" fill="none" stroke="#FFFFFF" stroke-opacity="0.34" stroke-width="3"/>
+  <!-- A deeply cut, incomplete ring reads as a balance meter, not a letter. -->
+  <circle cx="512" cy="503" r="171" fill="none" stroke="#254B7B" stroke-width="66"/>
+  <circle cx="512" cy="507" r="171" fill="none" stroke="#0F294D" stroke-width="56"/>
+  <path d="M 512 332 A 171 171 0 1 1 350.63 559.94" fill="none" stroke="#071E38" stroke-opacity="0.38" stroke-width="46" stroke-linecap="round" transform="translate(0 5)"/>
+  <path d="M 512 332 A 171 171 0 1 1 350.63 559.94" fill="none" stroke="url(#gauge)" stroke-width="42" stroke-linecap="round"/>
+  <!-- Central minted lozenge is legible at small sizes. -->
+  <path d="M 512 427 L 562 456 L 562 550 L 512 579 L 462 550 L 462 456 Z" fill="#FFFFFF" fill-opacity="0.32"/>
+  <path d="M 512 438 L 552 461 L 552 545 L 512 568 L 472 545 L 472 461 Z" fill="url(#coin)"/>
+</svg>
